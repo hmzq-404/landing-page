@@ -11,49 +11,68 @@ body {
     flex-direction: column;
 }
 
-body div {
+body > div {
     flex: 4;
 }
 
 .top-content-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 0 10% 10px 10%;
+    /* align-items: center; */
     color: white;
     background-color: #1F2937;
-}
-
-.top-content-container div {
-    width: 80%;
 }
 
 .header {
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
     flex-basis: 30%;
 }
 
 .navigation-links {
     display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .main-content {
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
     flex-basis: 70%;
 }
 
+.main-content-text {
+    width: 500px;
+}
+
+.main-content .image-placeholder {
+    width: 400px;
+    height: 70%;
+    background-color: darkslategray;
+    border: none;
+}
+
 .info-container {
+    text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .cards {
     display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .card {
     width: 100px;
+}
+
+.card > div {
+    margin-bottom: 5px;
 }
 
 .review-container {
@@ -75,19 +94,20 @@ body div {
 
 .popup-container > div {
     display: flex;
+    gap: 10px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 50px;
     border-radius: 10px;
     background-color: #3883F6;
     color: #F9FAF8;
-    max-width: 80%;
+    width: 80%;
     height: 40%;
 }
 
 .footer {
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
     flex: 1;
     background-color: #1F2937;
@@ -102,7 +122,8 @@ body div {
 .info-header {
     font-size: 36px;
     font-weight: bold;
-    color: #1F2937
+    color: #1F2937;
+    margin-bottom: 20px;
 }
 
 .header-text {
